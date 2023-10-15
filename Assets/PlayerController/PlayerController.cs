@@ -8,11 +8,11 @@ public class PlayerMouvement : MonoBehaviour
 {
     public CharacterController controller;
 
-    [Header("Mouvement Parameters")]
-    float currentSpeed;
-    float walkingSpeed = 3f;
-    float runningSpeed = 5f;
-    float crouchingSpeed = 1.5f;
+    [Header("Mouvement Parameters")] 
+    [SerializeField] float currentSpeed;
+    [SerializeField] float walkingSpeed = 3f;
+    [SerializeField] float runningSpeed = 5f;
+    [SerializeField] float crouchingSpeed = 1.5f;
     float SpeedVelocity;
     
     [Header("Controls Parameters")]
@@ -21,7 +21,7 @@ public class PlayerMouvement : MonoBehaviour
     KeyCode jumpKey = KeyCode.Space;
 
     [Header("Jump Parameters")]
-    float jumpHeight = 1f;
+    [SerializeField] float jumpHeight = 1f;
     float jumpStart = 0f;
     float jumpCooldown = 0.5f;
     
